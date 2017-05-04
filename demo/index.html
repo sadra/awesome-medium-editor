@@ -2,30 +2,142 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>medium editor | demo</title>
+    <title>Awesome Medium Editor!</title>
     <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="../dist/css/medium-editor.css">
     <link rel="stylesheet" href="../dist/css/themes/default.css" id="medium-editor-theme">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/medium-editor.js"></script>
+    <script src="js/handlebars.runtime.min.js"></script>
+    <script src="js/medium-editor-insert-plugin.js"></script>
+    <script src="../dist/js/medium-editor.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/medium-editor-insert-plugin.min.css">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="container">
-        <h1>Medium Editor</h1>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Awesome Medium Editor!</h1>
+                <p class="text-center">Created with JavaScript and <i class="fa fa-heart" aria-hidden="true"></i> from Iran. Browse the code on <a href="https://github.com/amlashi-sadra/awesome-medium-editor/blob/master/package.json"><i class="fa fa-github" aria-hidden="true"></i>
+                    </span> GitHub</a>.</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+            </div>
+        </div>
+
+
         <div class="editable">
-            <p>My father’s family name being <a href="https://en.wikipedia.org/wiki/Pip_(Great_Expectations)">Pirrip</a>, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip. So, I called myself Pip, and came to be called Pip.</p>
-            <p>I give Pirrip as my father’s family name, on the authority of his tombstone and my sister,—Mrs. Joe Gargery, who married the blacksmith. As I never saw my father or my mother, and never saw any likeness of either of them (for their days were long before the days of photographs), my first fancies regarding what they were like were unreasonably derived from their tombstones. The shape of the letters on my father’s, gave me an odd idea that he was a square, stout, dark man, with curly black hair. From the character and turn of the inscription, “Also Georgiana Wife of the Above,” I drew a childish conclusion that my mother was freckled and sickly. To five little stone lozenges, each about a foot and a half long, which were arranged in a neat row beside their grave, and were sacred to the memory of five little brothers of mine,—who gave up trying to get a living, exceedingly early in that universal struggle,—I am indebted for a belief I religiously entertained that they had all been born on their backs with their hands in their trousers-pockets, and had never taken them out in this state of existence.</p>
-            <p>Ours was the marsh country, down by the river, within, as the river wound, twenty miles of the sea. My first most vivid and broad impression of the identity of things seems to me to have been gained on a memorable raw afternoon towards evening. At such a time I found out for certain that this bleak place overgrown with nettles was the churchyard; and that Philip Pirrip, late of this parish, and also Georgiana wife of the above, were dead and buried; and that Alexander, Bartholomew, Abraham, Tobias, and Roger, infant children of the aforesaid, were also dead and buried; and that the dark flat wilderness beyond the churchyard, intersected with dikes and mounds and gates, with scattered cattle feeding on it, was the marshes; and that the low leaden line beyond was the river; and that the distant savage lair from which the wind was rushing was the sea; and that the small bundle of shivers growing afraid of it all and beginning to cry, was Pip.</p>
+
         </div>
     </div>
-    <script src="../dist/js/medium-editor.js"></script>
+
     <script>
+
+        var insertImageExtension = MediumEditor.Extension.extend({
+            name: 'insertImage',
+
+            init: function () {
+                this.button = this.document.createElement('button');
+                this.button.classList.add('medium-editor-action');
+                this.button.innerHTML = '<i class="fa fa-picture-o" aria-hidden="true"></i>';
+                this.button.title = 'Insert Image';
+
+                this.on(this.button, 'click', this.handleClick.bind(this));
+            },
+
+            getButton: function () {
+                return this.button;
+            },
+
+            handleClick: function (event) {
+                this.base.checkContentChanged();
+
+                console.log(this.document.getSelection().toString().trim());
+
+                var imgSrc = this.document.getSelection().toString().trim();
+                var theHTML = '<div class="medium-insert-images">' + '<figure contenteditable="false">' +
+                        '<img src="'+imgSrc+'" alt="">'
+                        + '<figcaption contenteditable="true">So, What is the caption?</figcaption>'
+                        +'</figure></div><br/>';
+
+
+                insertImageElements(theHTML, '')
+            }
+
+        });
+
+        function insertImageElements(html, selectPastedContent){
+
+            var sel, range;
+            if (window.getSelection) {
+                // IE9 and non-IE
+                sel = window.getSelection();
+                if (sel.getRangeAt && sel.rangeCount) {
+                    range = sel.getRangeAt(0);
+                    range.deleteContents();
+
+                    // Range.createContextualFragment() would be useful here but is
+                    // only relatively recently standardized and is not supported in
+                    // some browsers (IE9, for one)
+                    var el = document.createElement("div");
+                    el.innerHTML = html;
+                    var frag = document.createDocumentFragment(), node, lastNode;
+                    while ( (node = el.firstChild) ) {
+                        lastNode = frag.appendChild(node);
+                    }
+                    var firstNode = frag.firstChild;
+                    range.insertNode(frag);
+
+                    // Preserve the selection
+                    if (lastNode) {
+                        range = range.cloneRange();
+                        range.setStartAfter(lastNode);
+                        if (selectPastedContent) {
+                            range.setStartBefore(firstNode);
+                        } else {
+                            range.collapse(true);
+                        }
+                        sel.removeAllRanges();
+                        sel.addRange(range);
+                    }
+                }
+            } else if ( (sel = document.selection) && sel.type != "Control") {
+                // IE < 9
+                var originalRange = sel.createRange();
+                originalRange.collapse(true);
+                sel.createRange().pasteHTML(html);
+                if (selectPastedContent) {
+                    range = sel.createRange();
+                    range.setEndPoint("StartToStart", originalRange);
+                    range.select();
+                }
+            }
+
+
+        }
+
         var editor = new MediumEditor('.editable', {
             buttonLabels: 'fontawesome',
              toolbar: {
                 /* These are the default options for the toolbar,
                    if nothing is passed this is what is used */
                 allowMultiParagraphSelection: true,
-                buttons: ['bold', 'italic', 'underline', 'anchor', 'h1', 'h2', 'h3', 'quote', 'strikethrough', 'orderedlist', 'unorderedlist', 'indent', 'outdent', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'removeFormat', 'image', 'rightToLeft'],
+                buttons: ['bold', 'italic', 'underline', 'anchor', 'h1', 'h2', 'h3', 'quote', 'strikethrough', 'orderedlist', 'unorderedlist', 'indent', 'outdent', 'justifyCenter', 'justifyFull', 'justifyLeft', 'justifyRight', 'removeFormat', 'insertImage'],
                 diffLeft: 0,
                 diffTop: -10,
                 firstButtonClass: 'medium-editor-button-first',
@@ -38,8 +150,19 @@
                 align: 'center',
                 sticky: false,
                 updateOnEmptySelection: false
+            },
+            extensions: {
+                'insertImage': new insertImageExtension()
             }
         });
+
+        $(function () {
+            $('.editable').mediumInsert({
+                editor: editor
+            });
+        });
+
+
     </script>
 </body>
 </html>

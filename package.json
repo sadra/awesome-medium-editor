@@ -1,19 +1,22 @@
 {
   "name": "awesome-medium-editor",
-  "version": "0.9",
-  "author": "Sadra Isapanah Amlashi <sadra@isapanah.com>",
-  "contributors": [],
-  "description": "Medium.com WYSIWYG editor clone.",
+  "version": "1.0.0",
+  "description": "Awesome Medium Editor",
   "main": "dist/js/medium-editor.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "medium-editor-insert-plugin": "^2.4.1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amlashi-sadra/awesome-medium-editor"
+    "url": "git+https://github.com/amlashi-sadra/awesome-medium-editor.git"
   },
+  "author": "Sadra Isapanah Amlashi <sadra@isapanah.com>",
   "bugs": {
     "url": "https://github.com/amlashi-sadra/awesome-medium-editor/issues",
     "email": "sadra@isapanah.com"
   },
-  "homepage": "http://ame.isapanah.com",
+  "homepage": "https://github.com/amlashi-sadra/awesome-medium-editor#readme",
   "keywords": [
     "contenteditable",
     "editor",
@@ -21,9 +24,6 @@
     "wysiwyg",
     "rich-text"
   ],
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
-  },
   "license": "MIT",
   "devDependencies": {
     "brfs": "1.4.2",
