@@ -1,10 +1,12 @@
 
 
 ![](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/public/src/img/ame-logo.png)
- <img src="https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/public/src/img/ame-logo.png" width="450">
-
 
 # Awesome Medium Editor
+[![Version](https://img.shields.io/badge/version-1.0-red.svg?style=flat)](https://github.com/amlashi-sadra/awesome-medium-editor)
+[![License](https://img.shields.io/badge/licence-MIT-lightgrey.svg?style=flat)](https://github.com/amlashi-sadra/awesome-medium-editor)
+[![Demo](https://img.shields.io/badge/demo-yes-green.svg?style=flat)](http://ame.isapanah.com)
+[![Gitter](https://img.shields.io/badge/gitter-join chat-brightgreen.svg?style=flat)](https://gitter.im/Awesome-Medium-Editor)
 
 This plugin expands capabilities of [MediumEditor](https://github.com/yabwe/medium-editor) (a clone of medium.com WYSIWYG editor) and it enables users to insert into the editor various types of content (depending on available addons).
 
