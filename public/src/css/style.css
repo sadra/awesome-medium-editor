@@ -1,0 +1,6 @@
+*:focus {
+	outline:none !important;
+}
+.medium-insert-buttons{
+	visibility: hidden;
+}
