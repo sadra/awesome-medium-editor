@@ -5,7 +5,8 @@
   "main": "dist/js/medium-editor.js",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "medium-editor-insert-plugin": "^2.4.1"
+    "medium-editor-insert-plugin": "^2.4.1",
+    "medium-editor-multi-placeholders-plugin": "^1.0.0"
   },
   "repository": {
     "type": "git",
