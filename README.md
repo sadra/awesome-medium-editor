@@ -13,8 +13,7 @@ This plugin expands capabilities of [MediumEditor](https://github.com/yabwe/medi
 
 Currently available features:  
 
-*   Support RTL   
-
+*   Support *RTL* Language _(Farsi, Hebrew, Arabic & ...)_
 *   Insert Image (from url)
 *   Extract content as *html* or *markdown*
 # Browser Support
