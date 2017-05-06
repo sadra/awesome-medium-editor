@@ -12,3 +12,7 @@
 .medium-editor-placeholder {
 	font-size: 20px !important;
 }
+
+hr {
+	border-top: 1px solid #d2d2d2 !important;
+}
