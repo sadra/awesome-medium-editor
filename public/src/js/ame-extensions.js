@@ -26,10 +26,7 @@ var insertImageExtension = MediumEditor.Extension.extend({
 
         var imgSrc = this.document.getSelection().toString().trim();
         var theHTML = '<div class="medium-insert-images">' + '<figure contenteditable="false">' +
-            '<img src="'+imgSrc+'" alt="">'
-            + '<figcaption contenteditable="true">So, What is the caption?</figcaption>'
-            +'</figure></div><br/>';
-
+            '<img src="'+imgSrc+'" alt=""></figure></div><br/>';
 
         insertImageElements(theHTML, '')
     }

@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
+
         <title>Awesome Medium Editor!</title>
 
         <!-- CSS -->
@@ -11,20 +12,26 @@
         <link rel="stylesheet" href="dist/css/medium-editor.min.css">
         <link rel="stylesheet" href="dist/css/themes/default.css" id="medium-editor-theme">
         <link rel="stylesheet" href="dist/css/medium-editor-insert-plugin.min.css">
+        <link rel="stylesheet" href="dist/css/toastr.min.css">
         <link rel="stylesheet" href="src/css/style.css">
 
+
+
         <!-- JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="dist/js/jquery.min.js"></script>
         <script src="dist/js/medium-editor.js"></script>
         <script src="dist/js/handlebars.runtime.min.js"></script>
         <script src="dist/js/medium-editor-insert-plugin.js"></script>
         <script src="dist/js/medium-editor-multi-placeholders-plugin.min.js"></script>
+        <script src="dist/js/to-markdown.js"></script>
+        <script src="dist/js/bootstrap.min.js" ></script>
+        <script src="dist/js/toastr.min.js"></script>
         <script src="src/js/main.js"></script>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
     </head>
 
@@ -68,9 +75,11 @@
 
                                 <h4>Extract your extension</h4><br/>
 
-                                <button type="button" class="btn btn-success">HTML</button>
-                                <button type="button" class="btn btn-success">Mardown</button>
-                                <button type="button" class="btn btn-success">Hexo</button>
+                                <button type="button" class="btn btn-success" id="extract-to-html">HTML</button>
+                                <button type="button" class="btn btn-success" id="extract-to-markdown">Mardown</button>
+<!--
+                                <button type="button" class="btn btn-success" id="extract-to-hexo">Hexo</button>
+-->
 
                             </div><br/>
 
@@ -88,6 +97,24 @@
                 <div class="container">
                     <br/> <div class="editable" id="editable-container">  </div>
                 </div>
+            </div>
+
+            <div class="jumbotron">
+                <div class="container">
+
+                    <section>
+                        <div align="center">
+                            <h2>Made with</h2>
+
+                            <img src="src/img/heart-beating.gif" width="200px" height="150px"/><br/><br/>
+
+                            <h4>by <a href="http://isapanah.com">Sadra</a> & <i>Powered by</i> <a href="https://yabwe.github.io/medium-editor/">Medium Editor</a>, <a href="https://github.com/domchristie/to-markdown">toMarkdown</a>, <a href="https://codeseven.github.io/toastr/">Toastr</a> + <a href="https://github.com/amlashi-sadra/awesome-medium-editor/graphs/contributors">people around the world</a>
+                            </h4>
+                        </div>
+                    </section>
+
+                </div>
+
             </div>
 
         </div>

@@ -4,3 +4,8 @@
 .medium-insert-buttons{
 	visibility: hidden;
 }
+
+#container {
+	width: 90% !important;
+	margin: 30px auto;
+}
