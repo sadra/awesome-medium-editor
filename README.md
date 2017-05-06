@@ -121,13 +121,13 @@ now, everything is ready! 😉👌
 
 [Kill some bugs 😈](https://github.com/amlashi-sadra/awesome-medium-editor/issues)
 
-- Fork it
-- Create your feature branch (git checkout -b my-new-feature)
-- Test your changes to the best of your ability.
-- Update the documentation to reflect your changes if they add or changes current functionality.
-- Commit your changes (git commit -am 'Added some feature') without files from the dist directory.
-- Push to the branch (git push origin my-new-feature)
-- Create new Pull Request
+1.  Fork it
+2.  Create your feature branch (git checkout -b my-new-feature)
+3.  Test your changes to the best of your ability.
+4.  Update the documentation to reflect your changes if they add or changes current functionality.
+5.  Commit your changes (git commit -am 'Added some feature') without files from the dist directory.
+6.  Push to the branch (git push origin my-new-feature)
+7.  Create new Pull Request
 
 # License
 MIT: [https://github.com/yabwe/medium-editor/blob/master/LICENSE](https://github.com/yabwe/medium-editor/blob/master/LICENSE)
