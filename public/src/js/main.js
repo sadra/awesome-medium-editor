@@ -50,6 +50,13 @@ $(document).ready(function(){
 
         var content = toMarkdown(document.getElementById('editable-container').innerHTML);
 
+        content = content.replace(/<\/span>/g,'');
+        content = content.replace(/<\/figure>/g,'');
+        content = content.replace(/<figure contenteditable="false">/g,'');
+        content = content.replace(/<\/div>/g,'');
+        content = content.replace(/<div class="medium-insert-images">/g,'');
+        content = content.replace(/<span style="color: inherit;">/g,'');
+
         copyTextToClipboard(content);
 
         toastr.success('Your post copied as a <b>MarkDown</b>, just press crtl+V to paste it into your blog. ');

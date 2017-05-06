@@ -84,7 +84,6 @@ function insertImageElements(html, selectPastedContent){
 }
 
 var editor = new MediumEditor('.editable', {
-    placeholder: false,
     buttonLabels: 'fontawesome',
     toolbar: {
         /* These are the default options for the toolbar,
@@ -105,19 +104,7 @@ var editor = new MediumEditor('.editable', {
         updateOnEmptySelection: false
     },
     extensions: {
-        'insertImage': new insertImageExtension(),
-        'multi_placeholder': new MediumEditorMultiPlaceholders({
-            placeholders: [
-                {
-                    tag: 'h1',
-                    text: 'Title'
-                },
-                {
-                    tag: 'p',
-                    text: 'Tell your story...'
-                }
-            ]
-        })
+        'insertImage': new insertImageExtension()
     }
 });
 

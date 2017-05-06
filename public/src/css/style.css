@@ -7,5 +7,8 @@
 
 #container {
 	width: 90% !important;
-	margin: 30px auto;
+}
+
+.medium-editor-placeholder {
+	font-size: 20px !important;
 }
