@@ -5,6 +5,7 @@
 # Awesome Medium Editor
 [![Version](https://img.shields.io/badge/version-1.0-red.svg?style=flat)](https://github.com/amlashi-sadra/awesome-medium-editor)
 [![License](https://img.shields.io/badge/licence-MIT-lightgrey.svg?style=flat)](https://github.com/amlashi-sadra/awesome-medium-editor)
+[![Dependencies](https://img.shields.io/badge/dependencies-non-yellow.svg?style=flat)](#)
 [![Demo](https://img.shields.io/badge/demo-yes-green.svg?style=flat)](http://ame.isapanah.com)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-brightgreen.svg?style=flat)](https://gitter.im/Awesome-Medium-Editor)
 
@@ -16,6 +17,10 @@ Currently available features:
 
 *   Insert Image (from url)
 *   Extract content as *html* or *markdown*
+# Browser Support
+
+![Browser Support chart](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/public/src/img/browser-support.png)
+![Browser Version Support chart](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/public/src/img/browser-support-2.png)
 
 # Quick Start
 
