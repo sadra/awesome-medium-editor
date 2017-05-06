@@ -15,7 +15,7 @@ Currently available features:
 
 The first step is to include the plugin with all its dependencies to your code:  
 
-```
+```html
 
 <!-- CSS -->
 
