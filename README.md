@@ -19,8 +19,8 @@ Currently available features:
 *   Extract content as *html* or *markdown*
 # Browser Support
 
-![Browser Support chart](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/public/src/img/browser-support.png)
-![Browser Version Support chart](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/public/src/img/browser-support-2.png)
+![Browser Support chart](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/browser-support.png)
+![Browser Version Support chart](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/browser-support-2.png)
 
 # Quick Start
 
