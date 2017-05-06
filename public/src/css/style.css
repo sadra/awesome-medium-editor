@@ -1,0 +1,14 @@
+*:focus {
+	outline:none !important;
+}
+.medium-insert-buttons{
+	visibility: hidden;
+}
+
+#container {
+	width: 90% !important;
+}
+
+.medium-editor-placeholder {
+	font-size: 20px !important;
+}
