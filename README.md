@@ -117,3 +117,17 @@ now, everything is ready! 😉👌
 
 <img src="https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/awesome-medium-editor-ltr.jpg" width="400"> <img src="https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/awesome-medium-editor-rtl.jpg" width="400">
 
+# Contributing
+
+[Kill some bugs 😈](https://github.com/amlashi-sadra/awesome-medium-editor/issues)
+
+- Fork it
+- Create your feature branch (git checkout -b my-new-feature)
+- Test your changes to the best of your ability.
+- Update the documentation to reflect your changes if they add or changes current functionality.
+- Commit your changes (git commit -am 'Added some feature') without files from the dist directory.
+- Push to the branch (git push origin my-new-feature)
+- Create new Pull Request
+
+# License
+MIT: [https://github.com/yabwe/medium-editor/blob/master/LICENSE](https://github.com/yabwe/medium-editor/blob/master/LICENSE)
