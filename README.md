@@ -13,7 +13,7 @@ This plugin expands capabilities of [MediumEditor](https://github.com/yabwe/medi
 
 Currently available features:  
 
-- Support <b>RTL</b> Language __(Farsi, Hebrew, Arabic & ...)__
+- Support __RTL__ Language _(Farsi, Hebrew, Arabic & ...)_
 - Insert Image (from url)
 - Extract content as *html* or *markdown*
 # Browser Support
@@ -70,7 +70,7 @@ The first step is to include the plugin with all its dependencies to your code:
 
 ```
 
-If you want use RTL support, put both button in your code:
+If you want use __RTL__ support, put both button in your code:
 
 ```html
 
@@ -80,7 +80,7 @@ If you want use RTL support, put both button in your code:
 
 ```
 
-If you want to extract and copy your code as *html* or *markdown* just put these buttons:
+If you want to extract and copy your code as __html__ or __markdown__ just put these buttons:
 
 ```html
 
