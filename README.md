@@ -13,9 +13,9 @@ This plugin expands capabilities of [MediumEditor](https://github.com/yabwe/medi
 
 Currently available features:  
 
-*   Support *RTL* Language _(Farsi, Hebrew, Arabic & ...)_
-*   Insert Image (from url)
-*   Extract content as *html* or *markdown*
+- Support <b>RTL</b> Language _(Farsi, Hebrew, Arabic & ...)_
+- Insert Image (from url)
+- Extract content as *html* or *markdown*
 # Browser Support
 
 <img src="https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/browser-support.jpg" alt="Smiley face" width="450px">
