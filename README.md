@@ -107,6 +107,6 @@ now, everything is ready! 😉👌
 
 # Demo Pictures
 
-![](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/awesome-medium-editor-ltr.jpg)
+![](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/awesome-medium-editor-ltr.jpg | width=300)
 
-![](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/awesome-medium-editor-rtl.jpg)
+![](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/awesome-medium-editor-rtl.jpg | width=300)
