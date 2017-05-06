@@ -1,3 +1,11 @@
+
+
+![](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/public/src/img/ame-logo.png)
+
+
+
+# Awesome Medium Editor
+
 This plugin expands capabilities of [MediumEditor](https://github.com/yabwe/medium-editor) (a clone of medium.com WYSIWYG editor) and it enables users to insert into the editor various types of content (depending on available addons).
 
 Currently available features:  
@@ -6,10 +14,6 @@ Currently available features:
 
 *   Insert Image (from url)
 *   Extract content as *html* or *markdown*
-
-# Demo
-
-[http://ame.isapanah.com](http://ame.isapanah.com/)  
 
 # Quick Start
 
@@ -58,3 +62,51 @@ The first step is to include the plugin with all its dependencies to your code:
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 ```
+
+If you want use RTL support, put both button in your code:
+
+```html
+
+<button type="button" class="btn btn-warning" id="dir-ltr">LTR</button>
+
+<button type="button" class="btn btn-default" id="dir-rtl">RTL</button>
+
+```
+
+If you want to extract and copy your code as *html* or *markdown* just put these buttons:
+
+```html
+
+<button type="button" class="btn btn-success" id="extract-to-html">HTML</button>
+
+<button type="button" class="btn btn-success" id="extract-to-markdown">Mardown</button>
+
+```
+
+Initialize MediumEditor as you normally would:  
+
+```html
+
+<div class="editable" id="editable-container">   
+
+```
+
+For final step, put the following javascript source for the Medium-Editor:
+
+```html
+
+<div class="editable" id="editable-container">   
+
+```
+
+now, everything is ready! 😉👌
+
+# Demo Link
+
+[http://ame.isapanah.com](http://ame.isapanah.com)
+
+# Demo Pictures
+
+![](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/awesome-medium-editor-ltr.jpg)
+
+![](https://raw.githubusercontent.com/amlashi-sadra/awesome-medium-editor/master/img/awesome-medium-editor-rtl.jpg)
