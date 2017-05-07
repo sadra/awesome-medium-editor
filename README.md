@@ -62,7 +62,7 @@ The first step is to include the plugin with all its dependencies to your code:
 
 <script src="src/js/main.js"></script>
 
-<!-- Latest compiled and minified CSS -->
+<!-- BootStrap CSS -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -86,7 +86,7 @@ If you want to extract and copy your code as __html__ or __markdown__ just put t
 
 <button type="button" class="btn btn-success" id="extract-to-html">HTML</button>
 
-<button type="button" class="btn btn-success" id="extract-to-markdown">Mardown</button>
+<button type="button" class="btn btn-success" id="extract-to-markdown">Markdown</button>
 
 ```
 
