@@ -127,4 +127,4 @@ now, everything is ready! 😉👌
 7.  Create new Pull Request
 
 # License
-MIT: [https://github.com/yabwe/medium-editor/blob/master/LICENSE](https://github.com/yabwe/medium-editor/blob/master/LICENSE)
+MIT: [https://github.com/amlashi-sadra/awesome-medium-editor/blob/master/LICENSE](https://github.com/amlashi-sadra/awesome-medium-editor/blob/master/LICENSE)
